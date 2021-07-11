@@ -91,7 +91,7 @@ module.exports =
 /*!******************!*\
   !*** ./forum.js ***!
   \******************/
-/*! no static exports found */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -151,7 +151,7 @@ function _setPrototypeOf(o, p) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ContactPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FirstVisitIndexPage; });
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__);
@@ -159,34 +159,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_components_Page__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_components_Page__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/components/IndexPage */ "flarum/components/IndexPage");
 /* harmony import */ var flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var flarum_helpers_listItems__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/helpers/listItems */ "flarum/helpers/listItems");
-/* harmony import */ var flarum_helpers_listItems__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_helpers_listItems__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
 
+var FirstVisitIndexPage = /*#__PURE__*/function (_Page) {
+  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(FirstVisitIndexPage, _Page);
 
-var ContactPage = /*#__PURE__*/function (_Page) {
-  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(ContactPage, _Page);
-
-  function ContactPage() {
+  function FirstVisitIndexPage() {
     return _Page.apply(this, arguments) || this;
   }
 
-  var _proto = ContactPage.prototype;
+  var _proto = FirstVisitIndexPage.prototype;
 
   _proto.view = function view() {
+    var baseUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
     return m(".IndexPage", [flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype.hero(), m(".container", m(".sideNavContainer", [m(".IndexPage-results.sideNavOffset", m("div", {
-      className: "Post-body"
-    }, [m("h1", "Welcome to the NAME Community!"), m("hr"), m("p", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"), m("hr"), m("h2", "Second Paragraph"), m("p", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"), m("div", {
-      className: "RulesButton"
-    }, m("button", {
-      className: "btn btn1"
-    }, "Agree"))]))]))]);
+      className: "body-post"
+    }, [m("section", {
+      className: "timeline-outer",
+      id: "timeline"
+    }, m("div", {
+      className: "container",
+      id: "content"
+    }, m("div", {
+      className: "row"
+    }, m("div", {
+      className: "col s12 m12 l12"
+    }, [m("h1", {
+      className: "blue-text lighten-1 header"
+    }, "Steps to become a good user"), m("ul", {
+      className: "timeline"
+    }, [m("li", {
+      className: "event"
+    }, [m("h3", "Management and Entreprenurship (MSc)"), m("p", " This September 2015 I will begin an MSc in Management and Entrepreneurship at University of Sussex, to broaden my knowledge and gain skills necessary for my future in business and management. ")]), m("li", {
+      className: "event"
+    }, [m("h3", "Claromentis"), m("p", " Claromentis is an intranet software provider company. I started working at the Brighton office as a Marketing Designer while I was still attending my final year at the University of Sussex. My primary responsibilities included creating corporate identity for the company; I re-designed their website, and have created marketing materials such as brochures. "), m("p", "Since graduating from university, I have also undertaken responsibilities for designing a product for the company. The roles I have been given have provided the perfect opportunity to implement the skills I have gained throughout my higher education, as well as experiencing the running of a successful business.")]), m("li", {
+      className: "event"
+    }, [m("h3", "Games & Multimedia Environments BSc (Hons)"), m("p", "Throughout my degree I have gained expansive knowledge of informatics areas including Human Computer Interaction, Multimedia Design and Development, Program Analysis and Design For my final year project, I created a 2D Puzzler Game for iOS called 'Flat Ball' and received a first. I therefore hope to release this game and further develop it to add new levels and improve the features. ")]), m("li", {
+      className: "event"
+    }, [m("h3", "1108 Studios"), m("p", "This is a small startup that a friend and I created to gain more skills and apply those I had learned while completing my diploma. Since its inception, as a front - end web developer I have advised, designed and built web solutions for numerous clients.")]), m("li", {
+      className: "event"
+    }, [m("h3", "IT Practitioners BTEC National Diploma"), m("p", "This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.")])])])))), m("button", {
+      className: "portfolio-link",
+      href: baseUrl
+    }, m("p", "I Agree..."))]))]))]);
   };
 
-  return ContactPage;
+  return FirstVisitIndexPage;
 }(flarum_components_Page__WEBPACK_IMPORTED_MODULE_2___default.a);
 
 
@@ -202,17 +223,94 @@ var ContactPage = /*#__PURE__*/function (_Page) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
-/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/FirstVisitIndexPage */ "./src/forum/components/FirstVisitIndexPage.js");
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/common/extend */ "flarum/common/extend");
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
+/* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FirstVisitIndexPage */ "./src/forum/components/FirstVisitIndexPage.js");
+/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/forum/components/HeaderPrimary */ "flarum/forum/components/HeaderPrimary");
+/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/common/components/Page */ "flarum/common/components/Page");
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4__);
 
 
-flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializers.add('justoverclock/first-visit-indexpage', function () {
-  flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.routes.FirstVisitIndexPage = {
+
+
+
+flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('justoverclock/first-visit-indexpage', function () {
+  flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.routes.FirstVisitIndexPage = {
     path: "/forum-rules",
-    component: _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_1__["default"]
+    component: _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_2__["default"]
   };
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oninit', function () {
+    var User = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.session.user;
+    var baseUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
+
+    if (User) {
+      var redirect = function redirect() {
+        var thecookie = readCookie('doRedirect');
+
+        if (!thecookie) {
+          window.location = baseUrl + '/forum-rules';
+        }
+      };
+
+      var createCookie = function createCookie(name, value, days) {
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+          var expires = "; expires=" + date.toGMTString();
+        } else var expires = "";
+
+        document.cookie = name + "=" + value + expires + "; path=/";
+      };
+
+      var readCookie = function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+
+          while (c.charAt(0) === ' ') {
+            c = c.substring(1, c.length);
+          }
+
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+
+        return null;
+      };
+
+      window.onload = function () {
+        redirect();
+        createCookie('doRedirect', 'true', '9999');
+      };
+    }
+  });
 });
+
+/***/ }),
+
+/***/ "flarum/common/components/Page":
+/*!***************************************************************!*\
+  !*** external "flarum.core.compat['common/components/Page']" ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/components/Page'];
+
+/***/ }),
+
+/***/ "flarum/common/extend":
+/*!******************************************************!*\
+  !*** external "flarum.core.compat['common/extend']" ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/extend'];
 
 /***/ }),
 
@@ -249,14 +347,14 @@ module.exports = flarum.core.compat['forum/app'];
 
 /***/ }),
 
-/***/ "flarum/helpers/listItems":
-/*!**********************************************************!*\
-  !*** external "flarum.core.compat['helpers/listItems']" ***!
-  \**********************************************************/
+/***/ "flarum/forum/components/HeaderPrimary":
+/*!***********************************************************************!*\
+  !*** external "flarum.core.compat['forum/components/HeaderPrimary']" ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = flarum.core.compat['helpers/listItems'];
+module.exports = flarum.core.compat['forum/components/HeaderPrimary'];
 
 /***/ })
 
