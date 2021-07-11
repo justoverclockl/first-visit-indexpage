@@ -84,11 +84,11 @@ export default class FirstVisitIndexPage extends Page {
                     )
                   )
                 ),
-                m("button", {className:"portfolio-link",href:baseUrl},
+                m("button", {className:"portfolio-link"},  m("a", {className:"portfolio-link", href:baseUrl},
                   m("p",
                     "I Agree..."
                   )
-                )
+                ))
               ]
             )
           ),

@@ -202,9 +202,11 @@ var FirstVisitIndexPage = /*#__PURE__*/function (_Page) {
     }, [m("h3", "1108 Studios"), m("p", "This is a small startup that a friend and I created to gain more skills and apply those I had learned while completing my diploma. Since its inception, as a front - end web developer I have advised, designed and built web solutions for numerous clients.")]), m("li", {
       className: "event"
     }, [m("h3", "IT Practitioners BTEC National Diploma"), m("p", "This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.")])])])))), m("button", {
+      className: "portfolio-link"
+    }, m("a", {
       className: "portfolio-link",
       href: baseUrl
-    }, m("p", "I Agree..."))]))]))]);
+    }, m("p", "I Agree...")))]))]))]);
   };
 
   return FirstVisitIndexPage;
