@@ -16,7 +16,7 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
             function redirect() {
                 var thecookie = readCookie('doRedirect');
                 if (!thecookie) {
-                    window.location = baseUrl + '/forum-rules';
+                    location.href = baseUrl + '/forum-rules';
                 }
             }
 

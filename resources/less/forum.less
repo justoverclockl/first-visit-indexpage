@@ -55,12 +55,15 @@
 .timeline .event:after {
   box-shadow: 0 0 0 8px  @primary-color;
   left: -30px;
-  background: #212121;
+  background: #ffffff;
   border-radius: 50%;
   height: 11px;
   width: 11px;
   content: "";
   top: 5px;
+}
+ul.timeline {
+  border-radius: 12px;
 }
 /**/
 /*——————————————
@@ -116,8 +119,9 @@ others
   text-decoration: none !important;
   font-weight: bold;
 }
-.blue-text {
+.maintitle-text {
   color: @primary-color;
+  text-align: center;
 }
 .btn
 {
@@ -137,5 +141,5 @@ others
 
 .btn1:hover {
   transform: rotateX(15deg);
-  box-shadow: 0 15px 15px @primary-color;
+  box-shadow: 0 5px 5px @primary-color;
 }
