@@ -193,15 +193,25 @@ var FirstVisitIndexPage = /*#__PURE__*/function (_Page) {
       className: 'timeline'
     }, [m('li', {
       className: 'event'
-    }, [m('h3', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.general-rules')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.general-rules-text'))]), m('li', {
+    }, [m('h3', {
+      id: 'generalRules'
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.general-rules')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.general-rules-text'))]), m('li', {
       className: 'event'
-    }, [m('h3', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.posting-rules')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.posting-rules-text'))]), m('li', {
+    }, [m('h3', {
+      id: 'posting'
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.posting-rules')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.posting-rules-text'))]), m('li', {
       className: 'event'
-    }, [m('h3', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.spam')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.spam-text'))]), m('li', {
+    }, [m('h3', {
+      id: 'spam'
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.spam')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.spam-text'))]), m('li', {
       className: 'event'
-    }, [m('h3', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.copyright')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.copyright-text'))]), m('li', {
+    }, [m('h3', {
+      id: 'copyright'
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.copyright')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.copyright-text'))]), m('li', {
       className: 'event'
-    }, [m('h3', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.rule-break')), m('p', 'This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.')])])])))), m('button', {
+    }, [m('h3', {
+      id: 'break'
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.rule-break')), m('p', flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.rule-break-text'))])])])))), m('button', {
       className: 'btn btn1',
       onclick: function onclick() {
         window.location = baseUrl;

@@ -24,29 +24,28 @@ export default class FirstVisitIndexPage extends Page {
                                             ),
                                             m('ul', { className: 'timeline' }, [
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', app.translator.trans('first-visit-indexpage.forum.general-rules')),
+                                                    m('h3', { id: 'generalRules' }, app.translator.trans('first-visit-indexpage.forum.general-rules')),
                                                     m('p',  app.translator.trans('first-visit-indexpage.forum.general-rules-text')
                                                     ),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', app.translator.trans('first-visit-indexpage.forum.posting-rules')),
+                                                    m('h3', { id: 'posting' }, app.translator.trans('first-visit-indexpage.forum.posting-rules')),
                                                     m('p',  app.translator.trans('first-visit-indexpage.forum.posting-rules-text')
                                                     ),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', app.translator.trans('first-visit-indexpage.forum.spam')),
+                                                    m('h3', { id: 'spam' }, app.translator.trans('first-visit-indexpage.forum.spam')),
                                                     m('p',  app.translator.trans('first-visit-indexpage.forum.spam-text')
                                                     ),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', app.translator.trans('first-visit-indexpage.forum.copyright')),
+                                                    m('h3', { id: 'copyright' }, app.translator.trans('first-visit-indexpage.forum.copyright')),
                                                     m('p',  app.translator.trans('first-visit-indexpage.forum.copyright-text')
                                                     ),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', app.translator.trans('first-visit-indexpage.forum.rule-break')),
-                                                    m('p',
-                                                        'This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.'
+                                                    m('h3', { id: 'break' }, app.translator.trans('first-visit-indexpage.forum.rule-break')),
+                                                    m('p',  app.translator.trans('first-visit-indexpage.forum.rule-break-text')
                                                     ),
                                                 ]),
                                             ]),
@@ -58,7 +57,7 @@ export default class FirstVisitIndexPage extends Page {
                                 {
                                     className: 'btn btn1',
                                     onclick: () => {
-                                        window.location = baseUrl;
+                                      window.location = baseUrl;
                                     },
                                 },
                               app.translator.trans('first-visit-indexpage.forum.agree-button')
