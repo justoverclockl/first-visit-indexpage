@@ -175,38 +175,38 @@ var FirstVisitIndexPage = /*#__PURE__*/function (_Page) {
 
   _proto.view = function view() {
     var baseUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
-    return m(".IndexPage", [flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype.hero(), m(".container", m(".sideNavContainer", [m(".IndexPage-results.sideNavOffset", m("div", {
-      className: "body-post"
-    }, [m("section", {
-      className: "timeline-outer",
-      id: "timeline"
-    }, m("div", {
-      className: "container",
-      id: "content"
-    }, m("div", {
-      className: "row"
-    }, m("div", {
-      className: "col s12 m12 l12"
-    }, [m("h1", {
-      className: "blue-text lighten-1 header"
-    }, "Steps to become a good user"), m("ul", {
-      className: "timeline"
-    }, [m("li", {
-      className: "event"
-    }, [m("h3", "Management and Entreprenurship (MSc)"), m("p", " This September 2015 I will begin an MSc in Management and Entrepreneurship at University of Sussex, to broaden my knowledge and gain skills necessary for my future in business and management. ")]), m("li", {
-      className: "event"
-    }, [m("h3", "Claromentis"), m("p", " Claromentis is an intranet software provider company. I started working at the Brighton office as a Marketing Designer while I was still attending my final year at the University of Sussex. My primary responsibilities included creating corporate identity for the company; I re-designed their website, and have created marketing materials such as brochures. "), m("p", "Since graduating from university, I have also undertaken responsibilities for designing a product for the company. The roles I have been given have provided the perfect opportunity to implement the skills I have gained throughout my higher education, as well as experiencing the running of a successful business.")]), m("li", {
-      className: "event"
-    }, [m("h3", "Games & Multimedia Environments BSc (Hons)"), m("p", "Throughout my degree I have gained expansive knowledge of informatics areas including Human Computer Interaction, Multimedia Design and Development, Program Analysis and Design For my final year project, I created a 2D Puzzler Game for iOS called 'Flat Ball' and received a first. I therefore hope to release this game and further develop it to add new levels and improve the features. ")]), m("li", {
-      className: "event"
-    }, [m("h3", "1108 Studios"), m("p", "This is a small startup that a friend and I created to gain more skills and apply those I had learned while completing my diploma. Since its inception, as a front - end web developer I have advised, designed and built web solutions for numerous clients.")]), m("li", {
-      className: "event"
-    }, [m("h3", "IT Practitioners BTEC National Diploma"), m("p", "This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.")])])])))), m("button", {
-      className: "portfolio-link"
-    }, m("a", {
-      className: "portfolio-link",
-      href: baseUrl
-    }, m("p", "I Agree...")))]))]))]);
+    return m('.IndexPage', [flarum_components_IndexPage__WEBPACK_IMPORTED_MODULE_3___default.a.prototype.hero(), m('.container', m('.sideNavContainer', [m('.IndexPage-results.sideNavOffset', m('div', {
+      className: 'body-post'
+    }, [m('section', {
+      className: 'timeline-outer',
+      id: 'timeline'
+    }, m('div', {
+      className: 'container',
+      id: 'content'
+    }, m('div', {
+      className: 'row'
+    }, m('div', {
+      className: 'col s12 m12 l12'
+    }, [m('h1', {
+      className: 'blue-text lighten-1 header'
+    }, 'Steps to become a good user'), m('ul', {
+      className: 'timeline'
+    }, [m('li', {
+      className: 'event'
+    }, [m('h3', 'Management and Entreprenurship (MSc)'), m('p', ' This September 2015 I will begin an MSc in Management and Entrepreneurship at University of Sussex, to broaden my knowledge and gain skills necessary for my future in business and management. ')]), m('li', {
+      className: 'event'
+    }, [m('h3', 'Claromentis'), m('p', ' Claromentis is an intranet software provider company. I started working at the Brighton office as a Marketing Designer while I was still attending my final year at the University of Sussex. My primary responsibilities included creating corporate identity for the company; I re-designed their website, and have created marketing materials such as brochures. '), m('p', 'Since graduating from university, I have also undertaken responsibilities for designing a product for the company. The roles I have been given have provided the perfect opportunity to implement the skills I have gained throughout my higher education, as well as experiencing the running of a successful business.')]), m('li', {
+      className: 'event'
+    }, [m('h3', 'Games & Multimedia Environments BSc (Hons)'), m('p', "Throughout my degree I have gained expansive knowledge of informatics areas including Human Computer Interaction, Multimedia Design and Development, Program Analysis and Design For my final year project, I created a 2D Puzzler Game for iOS called 'Flat Ball' and received a first. I therefore hope to release this game and further develop it to add new levels and improve the features. ")]), m('li', {
+      className: 'event'
+    }, [m('h3', '1108 Studios'), m('p', 'This is a small startup that a friend and I created to gain more skills and apply those I had learned while completing my diploma. Since its inception, as a front - end web developer I have advised, designed and built web solutions for numerous clients.')]), m('li', {
+      className: 'event'
+    }, [m('h3', 'IT Practitioners BTEC National Diploma'), m('p', 'This is where my interest in building things for interactive media began. During my first computing course I studied a range of core topics including multimedia design, database design, computer games development, computer networks and object oriented programming.')])])])))), m('button', {
+      className: 'btn btn1',
+      onclick: function onclick() {
+        window.location = baseUrl;
+      }
+    }, 'I agree')]))]))]);
   };
 
   return FirstVisitIndexPage;
@@ -230,21 +230,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/forum/app */ "flarum/forum/app");
 /* harmony import */ var flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_app__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FirstVisitIndexPage */ "./src/forum/components/FirstVisitIndexPage.js");
-/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/forum/components/HeaderPrimary */ "flarum/forum/components/HeaderPrimary");
-/* harmony import */ var flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_forum_components_HeaderPrimary__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/common/components/Page */ "flarum/common/components/Page");
-/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4__);
-
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! flarum/common/components/Page */ "flarum/common/components/Page");
+/* harmony import */ var flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('justoverclock/first-visit-indexpage', function () {
   flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.routes.FirstVisitIndexPage = {
-    path: "/forum-rules",
+    path: '/forum-rules',
     component: _components_FirstVisitIndexPage__WEBPACK_IMPORTED_MODULE_2__["default"]
   };
-  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oninit', function () {
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_Page__WEBPACK_IMPORTED_MODULE_3___default.a.prototype, 'oninit', function () {
     var User = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.session.user;
     var baseUrl = flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
 
@@ -261,14 +258,14 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('justov
         if (days) {
           var date = new Date();
           date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-          var expires = "; expires=" + date.toGMTString();
-        } else var expires = "";
+          var expires = '; expires=' + date.toGMTString();
+        } else var expires = '';
 
-        document.cookie = name + "=" + value + expires + "; path=/";
+        document.cookie = name + '=' + value + expires + '; path=/';
       };
 
       var readCookie = function readCookie(name) {
-        var nameEQ = name + "=";
+        var nameEQ = name + '=';
         var ca = document.cookie.split(';');
 
         for (var i = 0; i < ca.length; i++) {
@@ -346,17 +343,6 @@ module.exports = flarum.core.compat['components/Page'];
 /***/ (function(module, exports) {
 
 module.exports = flarum.core.compat['forum/app'];
-
-/***/ }),
-
-/***/ "flarum/forum/components/HeaderPrimary":
-/*!***********************************************************************!*\
-  !*** external "flarum.core.compat['forum/components/HeaderPrimary']" ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = flarum.core.compat['forum/components/HeaderPrimary'];
 
 /***/ })
 
