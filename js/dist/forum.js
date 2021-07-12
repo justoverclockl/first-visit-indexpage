@@ -189,7 +189,13 @@ var FirstVisitIndexPage = /*#__PURE__*/function (_Page) {
       className: 'col s12 m12 l12'
     }, [m('h1', {
       className: 'maintitle-text lighten-1 header'
-    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.title')), m('ul', {
+    }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.title')), m("div", {
+      id: "warningbox"
+    }, m("div", {
+      id: "rulesbox"
+    }, [m("p", [m("i", {
+      className: "fas fa-exclamation"
+    }), m("strong", flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.warning-title'))]), m("p", flarum_forum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('first-visit-indexpage.forum.warning-text'))])), m('ul', {
       className: 'timeline'
     }, [m('li', {
       className: 'event'

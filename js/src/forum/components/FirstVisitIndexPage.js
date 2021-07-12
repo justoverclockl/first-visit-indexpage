@@ -22,6 +22,17 @@ export default class FirstVisitIndexPage extends Page {
                                             m('h1', { className: 'maintitle-text lighten-1 header' },
                                               app.translator.trans('first-visit-indexpage.forum.title')
                                             ),
+                                          m("div", {id:"warningbox"},
+                                            m("div", {id:"rulesbox"},
+                                              [
+                                                m("p",
+                                                  [
+                                                    m("i", {className:"fas fa-exclamation"}),
+                                                    m("strong", app.translator.trans('first-visit-indexpage.forum.warning-title')
+                                                    )]),
+                                                m("p", app.translator.trans('first-visit-indexpage.forum.warning-text')
+                                                )])
+                                          ),
                                             m('ul', { className: 'timeline' }, [
                                                 m('li', { className: 'event' }, [
                                                     m('h3', { id: 'generalRules' }, app.translator.trans('first-visit-indexpage.forum.general-rules')),
