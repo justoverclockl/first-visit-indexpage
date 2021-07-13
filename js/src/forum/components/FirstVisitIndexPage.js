@@ -13,7 +13,7 @@ import Page from 'flarum/components/Page';
 import IndexPage from 'flarum/components/IndexPage';
 
 export default class FirstVisitIndexPage extends Page {
-
+app.setTitle("Forum Rules");
     view() {
         const baseUrl = app.forum.attribute('baseUrl');
         const toHome = '/';
