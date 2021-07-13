@@ -1,8 +1,9 @@
 {
   "name": "justoverclock/first-visit-indexpage",
-  "description": "Redirect first user visit to a custom IndexPage",
+  "description": "Redirect first user visit to forum Rules Page",
   "keywords": [
-    "flarum"
+    "redirect to rules",
+      "first visit"
   ],
   "type": "flarum-extension",
   "license": "MIT",
@@ -29,9 +30,9 @@
       "title": "FirstVisitIndexPage",
       "category": "",
       "icon": {
-        "name": "",
-        "backgroundColor": "",
-        "color": ""
+        "name": "fas fa-book-dead",
+        "backgroundColor": "red",
+        "color": "white"
       }
     },
     "flagrow": {
