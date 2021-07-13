@@ -1,3 +1,13 @@
+/*
+ * This file is part of justoverclock/first-visit-indexpage.
+ *
+ * Copyright (c) 2021 Marco Colia.
+ * https://flarum.it
+ *
+ * For the full copyright and license information, please view the LICENSE.md
+ * file that was distributed with this source code.
+ */
+
 import { extend } from 'flarum/common/extend';
 import app from 'flarum/forum/app';
 import FirstVisitIndexPage from './components/FirstVisitIndexPage';

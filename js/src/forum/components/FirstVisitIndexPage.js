@@ -1,10 +1,22 @@
+/*
+ * This file is part of justoverclock/first-visit-indexpage.
+ *
+ * Copyright (c) 2021 Marco Colia.
+ * https://flarum.it
+ *
+ * For the full copyright and license information, please view the LICENSE.md
+ * file that was distributed with this source code.
+ */
+
 import app from 'flarum/forum/app';
 import Page from 'flarum/components/Page';
 import IndexPage from 'flarum/components/IndexPage';
 
 export default class FirstVisitIndexPage extends Page {
+
     view() {
         const baseUrl = app.forum.attribute('baseUrl');
+        const toHome = '/';
 
         return m('.IndexPage', [
             IndexPage.prototype.hero(),
@@ -31,7 +43,9 @@ export default class FirstVisitIndexPage extends Page {
                                                     m("strong", app.translator.trans('first-visit-indexpage.forum.warning-title')
                                                     )]),
                                                 m("p", app.translator.trans('first-visit-indexpage.forum.warning-text')
-                                                )])
+                                                )
+                                              ]
+                                            )
                                           ),
                                             m('ul', { className: 'timeline' }, [
                                                 m('li', { className: 'event' }, [
@@ -64,11 +78,23 @@ export default class FirstVisitIndexPage extends Page {
                                     )
                                 )
                             ),
+                          m("div", {className:"outer make-center"},
+                            m("div", {className:"inner make-center"},
+                              m("input", {type:"checkbox",id:"agreeRules",}),
+                              "i've read and accept these rules"
+                            )
+                          ),
                             m('button',
                                 {
                                     className: 'btn btn1',
-                                    onclick: () => {
-                                      window.location = baseUrl;
+                                    id: 'acceptRules',
+                                    onclick: function() {
+                                      if (document.getElementById('agreeRules').checked) {
+                                        m.route.set(toHome);
+                                      } else {
+                                        alert("Please accept the rules to continue");
+                                      }
+
                                     },
                                 },
                               app.translator.trans('first-visit-indexpage.forum.agree-button')
@@ -80,3 +106,9 @@ export default class FirstVisitIndexPage extends Page {
         ]);
     }
 }
+
+/*
+function validate() {
+  if (document.getElementById('agreeRules').checked) {
+    alert("checked");
+  }*/
