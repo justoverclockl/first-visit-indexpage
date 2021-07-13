@@ -1,6 +1,6 @@
 # FirstVisitIndexPage
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/first-visit-indexpage.svg)](https://packagist.org/packages/justoverclock/first-visit-indexpage) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/first-visit-indexpage.svg)](https://packagist.org/packages/justoverclock/first-visit-indexpage)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](http://poser.pugx.org/justoverclock/first-visit-indexpage/v)](https://packagist.org/packages/justoverclock/first-visit-indexpage) [![Total Downloads](http://poser.pugx.org/justoverclock/first-visit-indexpage/downloads)](https://packagist.org/packages/justoverclock/first-visit-indexpage)
 
 A [Flarum](http://flarum.org) extension. Redirect first user visit (only for registered users) to a custom IndexPage that shows forum rules. This happen only for the FIRST visit of a registered users.
 
