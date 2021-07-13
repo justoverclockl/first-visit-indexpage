@@ -26,5 +26,4 @@ php flarum cache:clear
 ### Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/first-visit-indexpage)
-- [GitHub](https://github.com/justoverclock/first-visit-indexpage)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/first-visit-indexpage)
