@@ -37,7 +37,7 @@ export default class FirstVisitIndexPage extends Page {
                                         { className: 'row' },
                                         m('div', { className: 'col s12 m12 l12' }, [
                                             m('h1',
-                                                { className: 'maintitle-text lighten-1 header' },
+                                                { className: 'maintitle.text lighten-1 header' },
                                                 app.translator.trans('first-visit-indexpage.forum.title')
                                             ),
                                             m('div',
@@ -45,34 +45,34 @@ export default class FirstVisitIndexPage extends Page {
                                                 m('div', { id: 'rulesbox' }, [
                                                     m('p', [
                                                         m('i', { className: 'fas fa-exclamation' }),
-                                                        m('strong', app.translator.trans('first-visit-indexpage.forum.warning-title')),
+                                                        m('strong', app.translator.trans('first-visit-indexpage.forum.warning.title')),
                                                     ]),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.warning-text')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.warning.text')),
                                                 ])
                                             ),
                                             m('ul', { className: 'timeline' }, [
                                                 m('li', { className: 'event' }, [
                                                     m('h3',
                                                         { id: 'generalRules' },
-                                                        app.translator.trans('first-visit-indexpage.forum.general-rules')
+                                                        app.translator.trans('first-visit-indexpage.forum.general-rules.title')
                                                     ),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.general-rules-text')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.general-rules.text')),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', { id: 'posting' }, app.translator.trans('first-visit-indexpage.forum.posting-rules')),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.posting-rules-text')),
+                                                    m('h3', { id: 'posting' }, app.translator.trans('first-visit-indexpage.forum.posting-rules.title')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.posting-rules.text')),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', { id: 'spam' }, app.translator.trans('first-visit-indexpage.forum.spam')),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.spam-text')),
+                                                    m('h3', { id: 'spam' }, app.translator.trans('first-visit-indexpage.forum.spam.title')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.spam.text')),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', { id: 'copyright' }, app.translator.trans('first-visit-indexpage.forum.copyright')),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.copyright-text')),
+                                                    m('h3', { id: 'copyright' }, app.translator.trans('first-visit-indexpage.forum.copyright.title')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.copyright.text')),
                                                 ]),
                                                 m('li', { className: 'event' }, [
-                                                    m('h3', { id: 'break' }, app.translator.trans('first-visit-indexpage.forum.rule-break')),
-                                                    m('p', app.translator.trans('first-visit-indexpage.forum.rule-break-text')),
+                                                    m('h3', { id: 'break' }, app.translator.trans('first-visit-indexpage.forum.rule-break.title')),
+                                                    m('p', app.translator.trans('first-visit-indexpage.forum.rule-break.text')),
                                                 ]),
                                             ]),
                                         ])
