@@ -52,7 +52,23 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
 
             window.onload = function () {
                 redirect();
-                createCookie('doRedirect', 'true', '9999');
+                /*createCookie('doRedirect', 'true', '9999');*/
+                if ($('#acceptRules').length == 1) {
+                    $('#acceptRules').on('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        var checkBox = document.getElementById("agreeRules");
+                        if (checkBox.checked == true){
+                            createCookie('doRedirect', 'true', '9999');
+                            return true;
+                        } else {
+                            return false;
+                        }
+                      
+                        return false;
+                    });
+                    
+                }
             };
         }
     });
