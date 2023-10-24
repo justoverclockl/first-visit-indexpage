@@ -50,9 +50,7 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                 return null;
             }
 
-            window.onload = function () {
-                redirect();
-                /*createCookie('doRedirect', 'true', '9999');*/
+            function clickButton() {
                 if ($('#acceptRules').length == 1) {
                     $('#acceptRules').on('click', function (e) {
                         e.preventDefault();
@@ -69,6 +67,12 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                     });
                     
                 }
+            }
+
+            window.onload = function () {
+                redirect();
+                /*createCookie('doRedirect', 'true', '9999');*/
+                clickButton();
             };
         }
     });
