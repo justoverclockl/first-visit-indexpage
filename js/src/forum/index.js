@@ -66,11 +66,17 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                         return false;
                     });
                     
+                } else {
+                    var thecookie = readCookie('doRedirect');
+                    if (!thecookie) {
+                        location.href = baseUrl + '/forum-rules';
+                        //return false;
+                    }
                 }
             }
 
             window.onload = function () {
-                redirect();
+                /*redirect();*/
                 /*createCookie('doRedirect', 'true', '9999');*/
                 /*clickButton();*/
                 if ($('#acceptRules').length == 1) {
@@ -82,14 +88,20 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                             createCookie('doRedirect', 'true', '9999');
                             return true;
                         } else {
+                            //redirect();
                             return false;
                         }
-                      
+
                         return false;
                     });
-                    
+
+                } else {
+                    var thecookie = readCookie('doRedirect');
+                    if (!thecookie) {
+                        location.href = baseUrl + '/forum-rules';
+                        //return false;
+                    }
                 }
-                
             };
         }
     });
