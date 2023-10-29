@@ -59,8 +59,6 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                         if (checkBox.checked == true){
                             createCookie('doRedirect', 'true', '9999');
                             return true;
-                        } else {
-                            return false;
                         }
                       
                         return false;
@@ -87,9 +85,6 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                         if (checkBox.checked == true){
                             createCookie('doRedirect', 'true', '9999');
                             return true;
-                        } else {
-                            //redirect();
-                            return false;
                         }
 
                         return false;
