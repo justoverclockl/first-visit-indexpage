@@ -50,9 +50,53 @@ app.initializers.add('justoverclock/first-visit-indexpage', () => {
                 return null;
             }
 
+            function clickButton() {
+                if ($('#acceptRules').length == 1) {
+                    $('#acceptRules').on('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        var checkBox = document.getElementById("agreeRules");
+                        if (checkBox.checked == true){
+                            createCookie('doRedirect', 'true', '9999');
+                            return true;
+                        }
+                      
+                        return false;
+                    });
+                    
+                } else {
+                    var thecookie = readCookie('doRedirect');
+                    if (!thecookie) {
+                        location.href = baseUrl + '/forum-rules';
+                        //return false;
+                    }
+                }
+            }
+
             window.onload = function () {
-                redirect();
-                createCookie('doRedirect', 'true', '9999');
+                /*redirect();*/
+                /*createCookie('doRedirect', 'true', '9999');*/
+                /*clickButton();*/
+                if ($('#acceptRules').length == 1) {
+                    $('#acceptRules').on('click', function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        var checkBox = document.getElementById("agreeRules");
+                        if (checkBox.checked == true){
+                            createCookie('doRedirect', 'true', '9999');
+                            return true;
+                        }
+
+                        return false;
+                    });
+
+                } else {
+                    var thecookie = readCookie('doRedirect');
+                    if (!thecookie) {
+                        location.href = baseUrl + '/forum-rules';
+                        //return false;
+                    }
+                }
             };
         }
     });
